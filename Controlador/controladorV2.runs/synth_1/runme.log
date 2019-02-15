@@ -1,0 +1,898 @@
+
+*** Running vivado
+    with args -log dsed_audio.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source dsed_audio.tcl
+
+
+****** Vivado v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source dsed_audio.tcl -notrace
+Command: synth_design -top dsed_audio -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8864 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 362.785 ; gain = 75.871
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'dsed_audio' [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.srcs/sources_1/new/dsed_audio.vhd:51]
+INFO: [Synth 8-3491] module 'clk_12Megas' declared at 'D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.runs/synth_1/.Xil/Vivado-7748-DESKTOP-86MG19K/realtime/clk_12Megas_stub.vhdl:5' bound to instance 'U0' of component 'clk_12Megas' [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.srcs/sources_1/new/dsed_audio.vhd:138]
+INFO: [Synth 8-638] synthesizing module 'clk_12Megas' [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.runs/synth_1/.Xil/Vivado-7748-DESKTOP-86MG19K/realtime/clk_12Megas_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'MemoriaRAM' declared at 'D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.runs/synth_1/.Xil/Vivado-7748-DESKTOP-86MG19K/realtime/MemoriaRAM_stub.vhdl:5' bound to instance 'U1' of component 'MemoriaRAM' [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.srcs/sources_1/new/dsed_audio.vhd:143]
+INFO: [Synth 8-638] synthesizing module 'MemoriaRAM' [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.runs/synth_1/.Xil/Vivado-7748-DESKTOP-86MG19K/realtime/MemoriaRAM_stub.vhdl:17]
+INFO: [Synth 8-3491] module 'audio_interface' declared at 'D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.srcs/sources_1/new/audio_interface.vhd:35' bound to instance 'U2' of component 'audio_interface' [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.srcs/sources_1/new/dsed_audio.vhd:152]
+INFO: [Synth 8-638] synthesizing module 'audio_interface' [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.srcs/sources_1/new/audio_interface.vhd:54]
+INFO: [Synth 8-3491] module 'relojes' declared at 'D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.srcs/sources_1/new/relojes.vhd:36' bound to instance 'DUT1' of component 'relojes' [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.srcs/sources_1/new/audio_interface.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'relojes' [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.srcs/sources_1/new/relojes.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'relojes' (1#1) [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.srcs/sources_1/new/relojes.vhd:44]
+INFO: [Synth 8-3491] module 'FSMD_microphone' declared at 'D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.srcs/sources_1/new/FSMD_microphone.vhd:35' bound to instance 'DUT2' of component 'FSMD_microphone' [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.srcs/sources_1/new/audio_interface.vhd:96]
+INFO: [Synth 8-638] synthesizing module 'FSMD_microphone' [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.srcs/sources_1/new/FSMD_microphone.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'FSMD_microphone' (2#1) [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.srcs/sources_1/new/FSMD_microphone.vhd:45]
+INFO: [Synth 8-3491] module 'pwm' declared at 'D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.srcs/sources_1/new/pwm.vhd:34' bound to instance 'DUT3' of component 'pwm' [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.srcs/sources_1/new/audio_interface.vhd:104]
+INFO: [Synth 8-638] synthesizing module 'pwm' [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.srcs/sources_1/new/pwm.vhd:44]
+WARNING: [Synth 8-6014] Unused sequential element requ_reg_reg was removed.  [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.srcs/sources_1/new/pwm.vhd:62]
+INFO: [Synth 8-256] done synthesizing module 'pwm' (3#1) [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.srcs/sources_1/new/pwm.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'audio_interface' (4#1) [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.srcs/sources_1/new/audio_interface.vhd:54]
+INFO: [Synth 8-3491] module 'fir_filter' declared at 'D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.srcs/sources_1/new/fir_filter.vhd:34' bound to instance 'U3' of component 'fir_filter' [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.srcs/sources_1/new/dsed_audio.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'fir_filter' [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.srcs/sources_1/new/fir_filter.vhd:44]
+INFO: [Synth 8-3491] module 'mux1' declared at 'D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.srcs/sources_1/new/mux1.vhd:34' bound to instance 'M1' of component 'mux1' [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.srcs/sources_1/new/fir_filter.vhd:80]
+INFO: [Synth 8-638] synthesizing module 'mux1' [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.srcs/sources_1/new/mux1.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'mux1' (5#1) [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.srcs/sources_1/new/mux1.vhd:44]
+INFO: [Synth 8-3491] module 'mux1' declared at 'D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.srcs/sources_1/new/mux1.vhd:34' bound to instance 'M2' of component 'mux1' [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.srcs/sources_1/new/fir_filter.vhd:89]
+INFO: [Synth 8-3491] module 'mux3' declared at 'D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.srcs/sources_1/new/mux3.vhd:33' bound to instance 'M3' of component 'mux3' [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.srcs/sources_1/new/fir_filter.vhd:98]
+INFO: [Synth 8-638] synthesizing module 'mux3' [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.srcs/sources_1/new/mux3.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'mux3' (6#1) [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.srcs/sources_1/new/mux3.vhd:39]
+WARNING: [Synth 8-6014] Unused sequential element c3_reg was removed.  [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.srcs/sources_1/new/fir_filter.vhd:84]
+WARNING: [Synth 8-6014] Unused sequential element c4_reg was removed.  [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.srcs/sources_1/new/fir_filter.vhd:85]
+INFO: [Synth 8-256] done synthesizing module 'fir_filter' (7#1) [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.srcs/sources_1/new/fir_filter.vhd:44]
+INFO: [Synth 8-3491] module 'maquinacontrolador' declared at 'D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.srcs/sources_1/new/maquinacontrolador.vhd:36' bound to instance 'U4' of component 'maquinacontrolador' [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.srcs/sources_1/new/dsed_audio.vhd:176]
+INFO: [Synth 8-638] synthesizing module 'maquinacontrolador' [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.srcs/sources_1/new/maquinacontrolador.vhd:56]
+WARNING: [Synth 8-6014] Unused sequential element primer_ciclo_reg_reg was removed.  [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.srcs/sources_1/new/maquinacontrolador.vhd:136]
+WARNING: [Synth 8-6014] Unused sequential element sample_audio_reg was removed.  [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.srcs/sources_1/new/maquinacontrolador.vhd:161]
+WARNING: [Synth 8-6014] Unused sequential element primer_ciclo_next_reg was removed.  [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.srcs/sources_1/new/maquinacontrolador.vhd:146]
+INFO: [Synth 8-256] done synthesizing module 'maquinacontrolador' (8#1) [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.srcs/sources_1/new/maquinacontrolador.vhd:56]
+INFO: [Synth 8-256] done synthesizing module 'dsed_audio' (9#1) [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.srcs/sources_1/new/dsed_audio.vhd:51]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 403.113 ; gain = 116.199
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 403.113 ; gain = 116.199
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.runs/synth_1/.Xil/Vivado-7748-DESKTOP-86MG19K/dcp5/blk_mem_gen_0_in_context.xdc] for cell 'U1'
+Finished Parsing XDC File [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.runs/synth_1/.Xil/Vivado-7748-DESKTOP-86MG19K/dcp5/blk_mem_gen_0_in_context.xdc] for cell 'U1'
+Parsing XDC File [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.runs/synth_1/.Xil/Vivado-7748-DESKTOP-86MG19K/dcp7/clk_12Megas_in_context.xdc] for cell 'U0'
+Finished Parsing XDC File [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.runs/synth_1/.Xil/Vivado-7748-DESKTOP-86MG19K/dcp7/clk_12Megas_in_context.xdc] for cell 'U0'
+Parsing XDC File [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.srcs/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.srcs/Nexys4DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.srcs/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/dsed_audio_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/dsed_audio_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 715.098 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 715.098 ; gain = 428.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 715.098 ; gain = 428.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk_100Mhz. (constraint file  {D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.runs/synth_1/.Xil/Vivado-7748-DESKTOP-86MG19K/dcp7/clk_12Megas_in_context.xdc}, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_100Mhz. (constraint file  {D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.runs/synth_1/.Xil/Vivado-7748-DESKTOP-86MG19K/dcp7/clk_12Megas_in_context.xdc}, line 4).
+Applied set_property DONT_TOUCH = true for U0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U1. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 715.098 ; gain = 428.184
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "state_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "primer_ciclo_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dato1next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dato2fijo" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ready_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "sample_out_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element r3_reg_reg was removed.  [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.srcs/sources_1/new/fir_filter.vhd:152]
+WARNING: [Synth 8-327] inferring latch for variable 'dato2fijo_reg' [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.srcs/sources_1/new/FSMD_microphone.vhd:100]
+WARNING: [Synth 8-327] inferring latch for variable 'dato1fijo_reg' [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.srcs/sources_1/new/FSMD_microphone.vhd:103]
+WARNING: [Synth 8-327] inferring latch for variable 'dato2next_reg' [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.srcs/sources_1/new/FSMD_microphone.vhd:70]
+WARNING: [Synth 8-327] inferring latch for variable 'dato1next_reg' [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.srcs/sources_1/new/FSMD_microphone.vhd:69]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 715.098 ; gain = 428.184
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 3     
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 4     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 2     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 13    
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 17    
++---Muxes : 
+	   4 Input     19 Bit        Muxes := 2     
+	   2 Input     19 Bit        Muxes := 6     
+	   2 Input      9 Bit        Muxes := 2     
+	   4 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 5     
+	   4 Input      8 Bit        Muxes := 3     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 6     
+	   6 Input      2 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 7     
+	   5 Input      1 Bit        Muxes := 3     
+	   6 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module relojes 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module FSMD_microphone 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+	   4 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   6 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 3     
+	   6 Input      1 Bit        Muxes := 1     
+Module pwm 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module mux3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+Module fir_filter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 9     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module maquinacontrolador 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 3     
++---Registers : 
+	               19 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   4 Input     19 Bit        Muxes := 2     
+	   2 Input     19 Bit        Muxes := 6     
+	   2 Input      8 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "U2/DUT2/state_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "U2/DUT2/state_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "U2/DUT3/ready_next" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element U3/r3_reg_reg was removed.  [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.srcs/sources_1/new/fir_filter.vhd:152]
+WARNING: [Synth 8-3917] design dsed_audio has port micro_LR driven by constant 0
+WARNING: [Synth 8-3917] design dsed_audio has port jack_sd driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 715.098 ; gain = 428.184
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'U0/clk_out1' to pin 'U0/bbstub_clk_out1/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 715.098 ; gain = 428.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 715.098 ; gain = 428.184
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 715.172 ; gain = 428.258
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 715.172 ; gain = 428.258
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 715.172 ; gain = 428.258
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 715.172 ; gain = 428.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 715.172 ; gain = 428.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 715.172 ; gain = 428.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 715.172 ; gain = 428.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+----------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name       | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+----------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|dsed_audio  | U3/FF7_reg_reg | 7      | 1     | YES          | NO                 | YES               | 1      | 0       | 
++------------+----------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_12Megas   |         1|
+|2     |MemoriaRAM    |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-----------------+------+
+|      |Cell             |Count |
++------+-----------------+------+
+|1     |MemoriaRAM_bbox  |     1|
+|2     |clk_12Megas_bbox |     1|
+|3     |CARRY4           |    34|
+|4     |LUT1             |    58|
+|5     |LUT2             |    47|
+|6     |LUT3             |    60|
+|7     |LUT4             |    85|
+|8     |LUT5             |    46|
+|9     |LUT6             |   101|
+|10    |MUXF7            |    24|
+|11    |SRL16E           |     1|
+|12    |FDCE             |    37|
+|13    |FDRE             |   148|
+|14    |LD               |    32|
+|15    |IBUF             |     7|
+|16    |OBUF             |     4|
++------+-----------------+------+
+
+Report Instance Areas: 
++------+---------+-------------------+------+
+|      |Instance |Module             |Cells |
++------+---------+-------------------+------+
+|1     |top      |                   |   693|
+|2     |  U2     |audio_interface    |   174|
+|3     |    DUT1 |relojes            |     9|
+|4     |    DUT2 |FSMD_microphone    |   133|
+|5     |    DUT3 |pwm                |    32|
+|6     |  U3     |fir_filter         |   241|
+|7     |  U4     |maquinacontrolador |   258|
++------+---------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 715.172 ; gain = 428.258
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 715.172 ; gain = 116.273
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 715.172 ; gain = 428.258
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 73 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  LD => LDCE: 32 instances
+
+55 Infos, 14 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 715.172 ; gain = 435.934
+INFO: [Common 17-1381] The checkpoint 'D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno/controladorV2/controladorV2.runs/synth_1/dsed_audio.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 715.172 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 23 18:52:23 2018...
+
+*** Running vivado
+    with args -log dsed_audio.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source dsed_audio.tcl
+
+
+****** Vivado v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source dsed_audio.tcl -notrace
+Command: synth_design -top dsed_audio -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 2400 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 362.570 ; gain = 76.074
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'dsed_audio' [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.srcs/sources_1/new/dsed_audio.vhd:51]
+INFO: [Synth 8-3491] module 'clk_12Megas' declared at 'D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.runs/synth_1/.Xil/Vivado-11260-DESKTOP-86MG19K/realtime/clk_12Megas_stub.vhdl:5' bound to instance 'U0' of component 'clk_12Megas' [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.srcs/sources_1/new/dsed_audio.vhd:138]
+INFO: [Synth 8-638] synthesizing module 'clk_12Megas' [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.runs/synth_1/.Xil/Vivado-11260-DESKTOP-86MG19K/realtime/clk_12Megas_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'MemoriaRAM' declared at 'D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.runs/synth_1/.Xil/Vivado-11260-DESKTOP-86MG19K/realtime/MemoriaRAM_stub.vhdl:5' bound to instance 'U1' of component 'MemoriaRAM' [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.srcs/sources_1/new/dsed_audio.vhd:143]
+INFO: [Synth 8-638] synthesizing module 'MemoriaRAM' [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.runs/synth_1/.Xil/Vivado-11260-DESKTOP-86MG19K/realtime/MemoriaRAM_stub.vhdl:17]
+INFO: [Synth 8-3491] module 'audio_interface' declared at 'D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.srcs/sources_1/new/audio_interface.vhd:35' bound to instance 'U2' of component 'audio_interface' [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.srcs/sources_1/new/dsed_audio.vhd:152]
+INFO: [Synth 8-638] synthesizing module 'audio_interface' [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.srcs/sources_1/new/audio_interface.vhd:54]
+INFO: [Synth 8-3491] module 'relojes' declared at 'D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.srcs/sources_1/new/relojes.vhd:36' bound to instance 'DUT1' of component 'relojes' [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.srcs/sources_1/new/audio_interface.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'relojes' [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.srcs/sources_1/new/relojes.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'relojes' (1#1) [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.srcs/sources_1/new/relojes.vhd:44]
+INFO: [Synth 8-3491] module 'FSMD_microphone' declared at 'D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.srcs/sources_1/new/FSMD_microphone.vhd:35' bound to instance 'DUT2' of component 'FSMD_microphone' [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.srcs/sources_1/new/audio_interface.vhd:96]
+INFO: [Synth 8-638] synthesizing module 'FSMD_microphone' [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.srcs/sources_1/new/FSMD_microphone.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'FSMD_microphone' (2#1) [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.srcs/sources_1/new/FSMD_microphone.vhd:45]
+INFO: [Synth 8-3491] module 'pwm' declared at 'D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.srcs/sources_1/new/pwm.vhd:34' bound to instance 'DUT3' of component 'pwm' [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.srcs/sources_1/new/audio_interface.vhd:104]
+INFO: [Synth 8-638] synthesizing module 'pwm' [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.srcs/sources_1/new/pwm.vhd:44]
+WARNING: [Synth 8-6014] Unused sequential element requ_reg_reg was removed.  [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.srcs/sources_1/new/pwm.vhd:62]
+INFO: [Synth 8-256] done synthesizing module 'pwm' (3#1) [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.srcs/sources_1/new/pwm.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'audio_interface' (4#1) [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.srcs/sources_1/new/audio_interface.vhd:54]
+INFO: [Synth 8-3491] module 'fir_filter' declared at 'D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.srcs/sources_1/new/fir_filter.vhd:30' bound to instance 'U3' of component 'fir_filter' [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.srcs/sources_1/new/dsed_audio.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'fir_filter' [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.srcs/sources_1/new/fir_filter.vhd:40]
+INFO: [Synth 8-3491] module 'mux1' declared at 'D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.srcs/sources_1/new/mux1.vhd:34' bound to instance 'M1' of component 'mux1' [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.srcs/sources_1/new/fir_filter.vhd:76]
+INFO: [Synth 8-638] synthesizing module 'mux1' [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.srcs/sources_1/new/mux1.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'mux1' (5#1) [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.srcs/sources_1/new/mux1.vhd:44]
+INFO: [Synth 8-3491] module 'mux1' declared at 'D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.srcs/sources_1/new/mux1.vhd:34' bound to instance 'M2' of component 'mux1' [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.srcs/sources_1/new/fir_filter.vhd:85]
+INFO: [Synth 8-3491] module 'mux3' declared at 'D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.srcs/sources_1/new/mux3.vhd:35' bound to instance 'M3' of component 'mux3' [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.srcs/sources_1/new/fir_filter.vhd:93]
+INFO: [Synth 8-638] synthesizing module 'mux3' [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.srcs/sources_1/new/mux3.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'mux3' (6#1) [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.srcs/sources_1/new/mux3.vhd:40]
+WARNING: [Synth 8-6014] Unused sequential element c3_reg was removed.  [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.srcs/sources_1/new/fir_filter.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element c4_reg was removed.  [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.srcs/sources_1/new/fir_filter.vhd:81]
+INFO: [Synth 8-256] done synthesizing module 'fir_filter' (7#1) [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.srcs/sources_1/new/fir_filter.vhd:40]
+INFO: [Synth 8-3491] module 'maquinacontrolador' declared at 'D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.srcs/sources_1/new/maquinacontrolador.vhd:36' bound to instance 'U4' of component 'maquinacontrolador' [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.srcs/sources_1/new/dsed_audio.vhd:176]
+INFO: [Synth 8-638] synthesizing module 'maquinacontrolador' [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.srcs/sources_1/new/maquinacontrolador.vhd:56]
+WARNING: [Synth 8-6014] Unused sequential element primer_ciclo_reg_reg was removed.  [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.srcs/sources_1/new/maquinacontrolador.vhd:136]
+WARNING: [Synth 8-6014] Unused sequential element sample_audio_reg was removed.  [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.srcs/sources_1/new/maquinacontrolador.vhd:161]
+WARNING: [Synth 8-6014] Unused sequential element primer_ciclo_next_reg was removed.  [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.srcs/sources_1/new/maquinacontrolador.vhd:146]
+INFO: [Synth 8-256] done synthesizing module 'maquinacontrolador' (8#1) [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.srcs/sources_1/new/maquinacontrolador.vhd:56]
+INFO: [Synth 8-256] done synthesizing module 'dsed_audio' (9#1) [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.srcs/sources_1/new/dsed_audio.vhd:51]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 402.648 ; gain = 116.152
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 402.648 ; gain = 116.152
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.runs/synth_1/.Xil/Vivado-11260-DESKTOP-86MG19K/dcp5/blk_mem_gen_0_in_context.xdc] for cell 'U1'
+Finished Parsing XDC File [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.runs/synth_1/.Xil/Vivado-11260-DESKTOP-86MG19K/dcp5/blk_mem_gen_0_in_context.xdc] for cell 'U1'
+Parsing XDC File [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.runs/synth_1/.Xil/Vivado-11260-DESKTOP-86MG19K/dcp7/clk_12Megas_in_context.xdc] for cell 'U0'
+Finished Parsing XDC File [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.runs/synth_1/.Xil/Vivado-11260-DESKTOP-86MG19K/dcp7/clk_12Megas_in_context.xdc] for cell 'U0'
+Parsing XDC File [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.srcs/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.srcs/Nexys4DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.srcs/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/dsed_audio_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/dsed_audio_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.059 . Memory (MB): peak = 714.875 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:21 . Memory (MB): peak = 714.875 ; gain = 428.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:21 . Memory (MB): peak = 714.875 ; gain = 428.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk_100Mhz. (constraint file  {D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.runs/synth_1/.Xil/Vivado-11260-DESKTOP-86MG19K/dcp7/clk_12Megas_in_context.xdc}, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_100Mhz. (constraint file  {D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.runs/synth_1/.Xil/Vivado-11260-DESKTOP-86MG19K/dcp7/clk_12Megas_in_context.xdc}, line 4).
+Applied set_property DONT_TOUCH = true for U0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U1. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:21 . Memory (MB): peak = 714.875 ; gain = 428.379
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "state_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "primer_ciclo_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dato1next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dato2fijo" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ready_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "sample_out_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element r3_reg_reg was removed.  [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.srcs/sources_1/new/fir_filter.vhd:139]
+WARNING: [Synth 8-327] inferring latch for variable 'dato2fijo_reg' [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.srcs/sources_1/new/FSMD_microphone.vhd:100]
+WARNING: [Synth 8-327] inferring latch for variable 'dato1fijo_reg' [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.srcs/sources_1/new/FSMD_microphone.vhd:103]
+WARNING: [Synth 8-327] inferring latch for variable 'dato2next_reg' [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.srcs/sources_1/new/FSMD_microphone.vhd:70]
+WARNING: [Synth 8-327] inferring latch for variable 'dato1next_reg' [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.srcs/sources_1/new/FSMD_microphone.vhd:69]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 714.875 ; gain = 428.379
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 3     
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 4     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 2     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 13    
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 17    
++---Muxes : 
+	   4 Input     19 Bit        Muxes := 2     
+	   2 Input     19 Bit        Muxes := 6     
+	   2 Input      9 Bit        Muxes := 2     
+	   4 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 5     
+	   4 Input      8 Bit        Muxes := 3     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 6     
+	   6 Input      2 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 7     
+	   5 Input      1 Bit        Muxes := 3     
+	   6 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module relojes 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module FSMD_microphone 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+	   4 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   6 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 3     
+	   6 Input      1 Bit        Muxes := 1     
+Module pwm 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module mux3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+Module fir_filter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 9     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module maquinacontrolador 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 3     
++---Registers : 
+	               19 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   4 Input     19 Bit        Muxes := 2     
+	   2 Input     19 Bit        Muxes := 6     
+	   2 Input      8 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "U2/DUT2/state_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "U2/DUT2/state_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "U2/DUT3/ready_next" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element U3/r3_reg_reg was removed.  [D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.srcs/sources_1/new/fir_filter.vhd:139]
+WARNING: [Synth 8-3917] design dsed_audio has port micro_LR driven by constant 0
+WARNING: [Synth 8-3917] design dsed_audio has port jack_sd driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 714.875 ; gain = 428.379
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'U0/clk_out1' to pin 'U0/bbstub_clk_out1/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:34 . Memory (MB): peak = 714.875 ; gain = 428.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:35 . Memory (MB): peak = 714.875 ; gain = 428.379
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:36 . Memory (MB): peak = 714.875 ; gain = 428.379
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:37 . Memory (MB): peak = 714.875 ; gain = 428.379
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:37 . Memory (MB): peak = 714.875 ; gain = 428.379
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:37 . Memory (MB): peak = 714.875 ; gain = 428.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:37 . Memory (MB): peak = 714.875 ; gain = 428.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:37 . Memory (MB): peak = 714.875 ; gain = 428.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:37 . Memory (MB): peak = 714.875 ; gain = 428.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+----------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name       | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+----------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|dsed_audio  | U3/FF7_reg_reg | 7      | 1     | YES          | NO                 | YES               | 1      | 0       | 
++------------+----------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_12Megas   |         1|
+|2     |MemoriaRAM    |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-----------------+------+
+|      |Cell             |Count |
++------+-----------------+------+
+|1     |MemoriaRAM_bbox  |     1|
+|2     |clk_12Megas_bbox |     1|
+|3     |CARRY4           |    34|
+|4     |LUT1             |    58|
+|5     |LUT2             |    49|
+|6     |LUT3             |    62|
+|7     |LUT4             |    89|
+|8     |LUT5             |    45|
+|9     |LUT6             |   102|
+|10    |MUXF7            |    24|
+|11    |SRL16E           |     1|
+|12    |FDCE             |    37|
+|13    |FDRE             |   148|
+|14    |LD               |    32|
+|15    |IBUF             |     7|
+|16    |OBUF             |     4|
++------+-----------------+------+
+
+Report Instance Areas: 
++------+---------+-------------------+------+
+|      |Instance |Module             |Cells |
++------+---------+-------------------+------+
+|1     |top      |                   |   701|
+|2     |  U2     |audio_interface    |   182|
+|3     |    DUT1 |relojes            |     9|
+|4     |    DUT2 |FSMD_microphone    |   141|
+|5     |    DUT3 |pwm                |    32|
+|6     |  U3     |fir_filter         |   241|
+|7     |  U4     |maquinacontrolador |   258|
++------+---------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:37 . Memory (MB): peak = 714.875 ; gain = 428.379
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 714.875 ; gain = 116.152
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:37 . Memory (MB): peak = 714.875 ; gain = 428.379
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 73 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  LD => LDCE: 32 instances
+
+55 Infos, 14 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:41 . Memory (MB): peak = 714.875 ; gain = 435.633
+INFO: [Common 17-1381] The checkpoint 'D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.runs/synth_1/dsed_audio.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.090 . Memory (MB): peak = 714.875 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Jan 12 17:37:42 2019...

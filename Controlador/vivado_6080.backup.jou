@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Fri Jan 11 23:42:04 2019
+# Process ID: 6080
+# Current directory: D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5344 D:\TELECO\4o\1er semestre\DSED\proyecto final\controlador final bueno, entrega\controladorV2\controladorV2.xpr
+# Log file: D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/vivado.log
+# Journal file: D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/TELECO/4o/1er semestre/DSED/proyecto final/controlador final bueno, entrega/controladorV2/controladorV2.xpr}
+update_compile_order -fileset sources_1

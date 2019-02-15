@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../controladorV2.srcs/sources_1/new/DSED.vhd"
+vhdl xil_defaultlib  "../../../controladorV2.srcs/sources_1/new/fir_filter.vhd"
+vhdl xil_defaultlib  "../../../controladorV2.srcs/sources_1/new/mux1.vhd"
+vhdl xil_defaultlib  "../../../controladorV2.srcs/sources_1/new/mux3.vhd"
+vhdl xil_defaultlib  "../../../../../Fir 5_12_2018_corregido/Fir 5_12_2018/Fir 30_12_2018/FIR/FIR/FIR.srcs/sim_1/new/fir_filter_tb2secuencia.vhd"
+
+# Do not sort compile order
+nosort
